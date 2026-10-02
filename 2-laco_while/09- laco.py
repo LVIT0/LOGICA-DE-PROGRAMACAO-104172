@@ -31,4 +31,4 @@ while True:
                 print('Emapda doce:  R$4,00')
             case 5:
                 print('Geladinho de yakult:  R$3,00')
-        break
+        break 
