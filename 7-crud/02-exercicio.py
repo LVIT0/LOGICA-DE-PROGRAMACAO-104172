@@ -9,7 +9,7 @@ while True:
     print('1- CADASTRAR')
     print('2- LISTA PACIENTE')
     print('3- ATUALIZAR PACIENTE')
-    print('2- EXCLUIR PACIENTE')
+    print('4- EXCLUIR PACIENTE')
 
     opcao = int(input('Escolha: ')).strip()
     
