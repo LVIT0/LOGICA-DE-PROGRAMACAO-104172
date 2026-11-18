@@ -14,4 +14,4 @@ for i in range(3):
     notas.append(nota)
 
 resultado = media(notas)
-print(f'Sua média é: {resultado:.2.f}')
+print(f'Sua média é: {resultado:.1f}')

@@ -1,8 +1,6 @@
 import os
 os.system('cls')
 
-notas = []
-
 
 def media(notas):
     return sum(notas) / len(notas)
@@ -12,13 +10,28 @@ def aprovacao(resultado):
         return 'Aprovado'
     else:
         return 'Reprovado'
-    
 
 def notas_medias(notas, resultado, situacao):
+    print('\n--- Resultados ---')
+    for i, nota in enumerate(notas, start=1):
+        print(f'{i}ª nota: {nota:.1f}')
+    print(f'Sua média é: {resultado}')
+    print(f'Situação: {aprovacao}')
 
-for i, nota in range(2):
-    nota = float(input(f'Digite sua {i + 1}ª nota: '))
-    notas.append(nota)
+
+notas = []
+
+for i in range(2):
+    while True:
+        nota = float(input(f'Digite sua {i + 1}ª nota: '))
+        if 0 <= nota <= 10:
+            notas.append(nota)
+            break
+        else:
+            print('Valor inválido ')
 
 resultado = media(notas)
-print(f'Sua média é: {resultado:.2f}')
+situacao = aprovacao(resultado)
+
+print(f'Situação: {situacao}')
+print(f'Resultado: {resultado}')
