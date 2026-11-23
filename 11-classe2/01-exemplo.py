@@ -23,5 +23,5 @@ for cliente in lista_clientes:
     print('='*35)
     print(f'Nome: {cliente.nome}')
     print(f'Telefone: {cliente.telefone}')
-    print(f'E-mail: {cliente.email}@gmail.com')
+    print(f'E-mail: {cliente.email}')
     print('='*35)
