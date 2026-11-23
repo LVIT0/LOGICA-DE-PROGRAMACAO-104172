@@ -6,14 +6,14 @@ os.system('cls')
 
 class Cliente:
     nome: str
-    telefone: float
+    telefone: str
     email: str
 
 lista_clientes = []
 
 dados_do_cliente = Cliente(
     nome= input('Digie seu nome: '),
-    telefone= int(input('Digite seu número de telefone: ')),
+    telefone= (input('Digite seu número de telefone: ')),
     email= input('Digite seu E-mail: ')
 )
 
